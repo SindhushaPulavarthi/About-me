@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>images</title>
+    <link rel="stylesheet" type="text/css" href="CSS/image-styles.css">
+    <script src="JavaScript/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <a href="index.html" class=bt>Back</a>
+    <h1>I am a nature lover</h1>
+    <h2 style="text-align:center">Here are some of those beautiful images having the features of carousel combined with light box </h2>
+    <div class="row">
+      <div class="column">
+        <img src="images/nature.jpg" alt="nature-pic" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/snow.jpg" alt="snow-pic" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/mountains.jpg" alt="mountain-pic" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/lights.jpg" alt="light-pic" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/nature-wide.jpg" alt="nature-wide" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/snow-wide.jpg" alt="snow-wide" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/mountains-wide.jpg" alt="mountains-wide" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/lights-wide.jpg" alt="lights-wide" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/nature-wide.jpg"  style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/snow-wide.jpg"  style="width:100%" onclick="currentSlide(2)" alt="Snow">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/mountains-wide.jpg"  style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/lights-wide.jpg"  style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <h2>Some more images</h2>
+      <h3>Responsive Image Grid</h3>
+      
+    </div>
+    <!-- Photo Grid -->
+    <div class="rows">
+      <div class="columns">
+        <img src="images/wedding.jpg" alt="wedding-img" style="width:100%">
+        <img src="images/rocks.jpg" alt="rocks-img" style="width:100%">
+        <img src="images/falls2.jpg" alt="falls2-img" style="width:100%">
+        <img src="images/paris.jpg" alt="paris-img" style="width:100%">
+        <img src="images/natures.jpg" alt="natures-img" style="width:100%">
+        <img src="images/mist.jpg" alt="mist-img" style="width:100%">
+        <img src="images/paris.jpg" alt="paris-img" style="width:100%">
+      </div>
+      <div class="columns">
+        <img src="images/underwater.jpg" alt="underwater-img" style="width:100%">
+        <img src="images/ocean.jpg" alt="ocean-img" style="width:100%">
+        <img src="images/wedding.jpg" alt="wedding-img" style="width:100%">
+        <img src="images/mountainskies.jpg" alt="mountainskies-img" style="width:100%">
+        <img src="images/rocks.jpg" alt="rocks-img" style="width:100%">
+        <img src="images/underwater.jpg" alt="underwater-img" style="width:100%">
+      </div>
+      <div class="columns">
+        <img src="images/wedding.jpg" alt="wedding-img" style="width:100%">
+        <img src="images/rocks.jpg" alt="rocks-img" style="width:100%">
+        <img src="images/falls2.jpg" alt="falls2-img" style="width:100%">
+        <img src="images/paris.jpg" alt="paris-img" style="width:100%">
+        <img src="images/natures.jpg" alt="natures-img" style="width:100%">
+        <img src="images/mist.jpg" alt="mist-img" style="width:100%">
+        <img src="images/paris.jpg" alt="paris-img" style="width:100%">
+      </div>
+      <div class="columns">
+        <img src="images/underwater.jpg" alt="underwater-img" style="width:100%">
+        <img src="images/ocean.jpg" alt="ocean-img" style="width:100%">
+        <img src="images/wedding.jpg" alt="wedding-img" style="width:100%">
+        <img src="images/mountainskies.jpg" alt="mountainskies-img" style="width:100%">
+        <img src="images/rocks.jpg" alt="rocks-img" style="width:100%">
+        <img src="images/underwater.jpg" alt="underwater-img" style="width:100%">
+      </div>
+    </div>
+  </body>
+</html>
